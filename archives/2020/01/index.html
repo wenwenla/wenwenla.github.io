@@ -6,17 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="文文的小站">
-    <title>文文的小站</title>
+    <title>归档: 2020/1 - 文文的小站</title>
     <meta name="author" content="lovelywen">
     
     
         <link rel="icon" href="https://www.lovelywen.com/assets/images/avatar.ico">
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","@id":"https://www.lovelywen.com","author":{"@type":"Person","name":"lovelywen","sameAs":["https://github.com/wenwenla","mailto:cs[dot]wangwen[at]outlook[dot]com"],"image":"avatar.jpg"},"name":"文文的小站","description":"","url":"https://www.lovelywen.com"}</script>
+    <script type="application/ld+json">{}</script>
     <meta property="og:type" content="blog">
 <meta property="og:title" content="文文的小站">
-<meta property="og:url" content="https://www.lovelywen.com/index.html">
+<meta property="og:url" content="https://www.lovelywen.com/archives/2020/01/index.html">
 <meta property="og:site_name" content="文文的小站">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="lovelywen">
@@ -223,61 +223,8 @@
                  class="
                         hasCoverMetaIn
                         ">
-                <section class="postShorten-group main-content-wrap">
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-right">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a
-                            class="link-unstyled"
-                            href="/2020/09/23/policy_gradient/"
-                            aria-label=": 策略梯度推导"
-                        >
-                            策略梯度推导
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2020-09-23T00:00:00+08:00">
-	
-		    9月 23, 2020
-    	
-    </time>
-    
-        <span>发布在 </span>
-        
-    <a class="category-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-excerpt">
-                    <h3 id="优化目标"><a href="#优化目标" class="headerlink" title="优化目标"></a>优化目标</h3><p>强化学习问题的优化目标都是最大化累积奖赏的期望，先尝试给出这句话的形式化表达.</p>
-<p>令$\tau = \langle s_1, a_1, r_1, s_2, a_2, r_2 \cdots, s_T, a_T, r_T, s_{T+1}\rangle$表示一条轨迹，那么累积奖赏的期望表述为：</p>
-<script type="math/tex; mode=display">
-E_{\tau \sim p(\tau)}[r(\tau)] = \int_\tau p(\tau)r(\tau) {\rm d}\tau</script><p>其中，$r(\tau)=\sum_{i=1}^{T} R(s_i, a_i, s_{i+1})$，$R$为奖赏函数.</p>
-                    
-                        <a
-                            href="/2020/09/23/policy_gradient/"
-                            class="postShorten-excerpt_link link"
-                            aria-label=": 策略梯度推导"
-                        >
-                            阅读全文
-                        </a>
-                        
-                    
-                </div>
-            
-        </div>
-        
-    </article>
+                
+    <section class="postShorten-group main-content-wrap">
     
     
     <article class="postShorten postShorten--thumbnailimg-right">
@@ -330,64 +277,6 @@ E_{\tau \sim p(\tau)}[r(\tau)] = \int_\tau p(\tau)r(\tau) {\rm d}\tau</script><p
         
     </article>
     
-    
-    <article class="postShorten postShorten--thumbnailimg-right">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a
-                            class="link-unstyled"
-                            href="/2019/08/27/programs-on-pi/"
-                            aria-label=": 树莓派上的软件们"
-                        >
-                            树莓派上的软件们
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2019-08-27T00:00:00+08:00">
-	
-		    8月 27, 2019
-    	
-    </time>
-    
-        <span>发布在 </span>
-        
-    <a class="category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/">软件配置</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-excerpt">
-                    <p>这里保存若干我的树莓派上的必备软件及其配置。</p>
-<h2 id="安装系统"><a href="#安装系统" class="headerlink" title="安装系统"></a>安装系统</h2><h3 id="镜像烧录"><a href="#镜像烧录" class="headerlink" title="镜像烧录"></a>镜像烧录</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://www.sdcard.org/chs/downloads/formatter/index.html">格式化软件下载</a>，使用该软件格式化存储卡.</li>
-<li><a target="_blank" rel="noopener" href="https://downloads.raspberrypi.org/NOOBS_latest">镜像下载</a>.</li>
-<li>解压镜像，将所有内容复制到存储卡，（注意：你复制进存储卡的应该是若干文件，而不是一个文件夹）</li>
-<li>插上存储卡，开机，图形化安装界面.</li>
-</ol>
-<h3 id="更换APT源"><a href="#更换APT源" class="headerlink" title="更换APT源"></a>更换APT源</h3><p><a target="_blank" rel="noopener" href="https://mirror.tuna.tsinghua.edu.cn/help/raspbian/">更换清华源</a>，按照链接更换为清华源.</p>
-                    
-                        <a
-                            href="/2019/08/27/programs-on-pi/"
-                            class="postShorten-excerpt_link link"
-                            aria-label=": 树莓派上的软件们"
-                        >
-                            阅读全文
-                        </a>
-                        
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
     <div class="pagination-bar">
     <ul class="pagination">
         
@@ -397,6 +286,7 @@ E_{\tau \sim p(\tau)}[r(\tau)] = \int_\tau p(\tau)r(\tau) {\rm d}\tau</script><p
 </div>
 
 </section>
+
 
 
                 <footer id="footer" class="main-content-wrap">
