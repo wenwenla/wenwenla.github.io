@@ -261,9 +261,9 @@
             
                 <div class="postShorten-excerpt">
                     <h3 id="优化目标"><a href="#优化目标" class="headerlink" title="优化目标"></a>优化目标</h3><p>强化学习问题的优化目标都是最大化累积奖赏的期望，先尝试给出这句话的形式化表达.</p>
-<p>令$\tau = \langle s<em>1, a_1, r_1, s_2, a_2, r_2 \cdots, s_T, a_T, r_T, s</em>{T+1}\rangle$表示一条轨迹，那么累积奖赏的期望表述为：</p>
+<p>令$\tau = \langle s_1, a_1, r_1, s_2, a_2, r_2 \cdots, s_T, a_T, r_T, s_{T+1}\rangle$表示一条轨迹，那么累积奖赏的期望表述为：</p>
 <script type="math/tex; mode=display">
-E_{\tau \sim p(\tau)}[r(\tau)] = \int_\tau p(\tau)r(\tau) {\rm d}\tau</script><p>其中，$r(\tau)=\sum<em>{i=1}^{T} R(s_i, a_i, s</em>{i+1})$，$R$为奖赏函数.</p>
+E_{\tau \sim p(\tau)}[r(\tau)] = \int_\tau p(\tau)r(\tau) {\rm d}\tau</script><p>其中，$r(\tau)=\sum_{i=1}^{T} R(s_i, a_i, s_{i+1})$，$R$为奖赏函数.</p>
                     
                         <a
                             href="/2020/09/23/policy_gradient/"
@@ -424,6 +424,7 @@ E_{\tau \sim p(\tau)}[r(\tau)] = \int_\tau p(\tau)r(\tau) {\rm d}\tau</script><p
             all[i].SourceElement().parentNode.className += ' has-jax';
     });
 </script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 </body>
 </html>
