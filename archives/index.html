@@ -261,7 +261,9 @@
             
                 <div class="postShorten-excerpt">
                     <h3 id="优化目标"><a href="#优化目标" class="headerlink" title="优化目标"></a>优化目标</h3><p>强化学习问题的优化目标都是最大化累积奖赏的期望，先尝试给出这句话的形式化表达.</p>
-<p>令$\tau = \langle s_1, a_1, r_1, s_2, a_2, r_2 \cdots, s_T, a_T, r_T, s_{T+1}\rangle$表示一条轨迹，那么累积奖赏的期望表述为：<br>$$<br>E_{\tau \sim p(\tau)}[r(\tau)] = \int_\tau p(\tau)r(\tau) {\rm d}\tau<br>$$<br>其中，$r(\tau)=\sum_{i=1}^{T} R(s_i, a_i, s_{i+1})$，$R$为奖赏函数.</p>
+<p>令$\tau = \langle s<em>1, a_1, r_1, s_2, a_2, r_2 \cdots, s_T, a_T, r_T, s</em>{T+1}\rangle$表示一条轨迹，那么累积奖赏的期望表述为：</p>
+<script type="math/tex; mode=display">
+E_{\tau \sim p(\tau)}[r(\tau)] = \int_\tau p(\tau)r(\tau) {\rm d}\tau</script><p>其中，$r(\tau)=\sum<em>{i=1}^{T} R(s_i, a_i, s</em>{i+1})$，$R$为奖赏函数.</p>
                     
                         <a
                             href="/2020/09/23/policy_gradient/"
@@ -313,7 +315,7 @@
             
                 <div class="postShorten-excerpt">
                     <p>这里保存若干我的树莓派上的必备软件及其配置。</p>
-<h2 id="安装系统"><a href="#安装系统" class="headerlink" title="安装系统"></a>安装系统</h2><h3 id="镜像烧录"><a href="#镜像烧录" class="headerlink" title="镜像烧录"></a>镜像烧录</h3><ol start="0">
+<h2 id="安装系统"><a href="#安装系统" class="headerlink" title="安装系统"></a>安装系统</h2><h3 id="镜像烧录"><a href="#镜像烧录" class="headerlink" title="镜像烧录"></a>镜像烧录</h3><ol>
 <li><a target="_blank" rel="noopener" href="https://www.sdcard.org/chs/downloads/formatter/index.html">格式化软件下载</a>，使用该软件格式化存储卡.</li>
 <li><a target="_blank" rel="noopener" href="https://downloads.raspberrypi.org/NOOBS_latest">镜像下载</a>.</li>
 <li>解压镜像，将所有内容复制到存储卡，（注意：你复制进存储卡的应该是若干文件，而不是一个文件夹）</li>
